@@ -342,7 +342,28 @@ body{
 }
 
 .message-list .commit-block{
-	position: relative;	
+	position: relative;
+	margin-top: 20px;
+}
+
+.message-list .commit-block:after{
+	position: absolute;
+	content: '';
+	background: url('../img/pinglun.png');
+	right: 0px;
+	top: -50px;
+	width: 42px;
+	height: 37px;
+}
+
+.message-list .commit-block:before{
+	position: absolute;
+	content: '';
+	background: url('../img/up_arrow.png') no-repeat;
+	top: -15px;
+	left: 20px;
+	width: 28px;
+	height: 15px;
 }
 
 
@@ -355,18 +376,20 @@ body{
 	border-top: none;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
 	line-height: 50px;
+	overflow: hidden;
+	font-size: 28px;
+	color: #333;
 }
 
 .message-list .commit-block ul li a{
 	font-size: 28px;
 	color: #4a5365;
+	vertical-align: top;
 }
 
-.message-list .commit-block ul li span{
-	font-size: 28px;
-	color: #333;
-}
 
 .swiper-container {
     width: 100%;
