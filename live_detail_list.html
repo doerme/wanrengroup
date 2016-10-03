@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no"> 
+	<meta http-equiv="Content-Type">
+	<meta content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=740px, user-scalable=no">
+	<title>直播详情</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css?v=2" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css?v=2" />
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css?v=2" />
+</head>
+<body>
+<div class="main-wrap detail-list">
+    
+    <ul class="main-list">
+    	<li>
+    		<img class="list-bg" src="./img/list_eg.png" />
+    		<div class="list-mask"></div>
+    		<img class="list-vip" src="./img/vip_icon.png" />
+    		<div class="list-people">2980人</div>
+    		<div class="list-title">粤讲粤玄</div>
+    		<div class="list-state" data-lasttime="60000"></div>
+    	</li>
+    	<li>
+    		<img class="list-bg" src="./img/list_eg.png" />
+    		<div class="list-mask"></div>
+    		<img class="list-vip" src="./img/vip_icon.png" />
+    		<div class="list-people">2980人</div>
+    		<div class="list-title">粤讲粤玄</div>
+    		<div class="list-state ing">正在直播中</div>
+    	</li>
+    </ul>
+
+    <ul class="hongbao-list">
+        <li>
+            <div class="state_line">点击抢红包</div>
+            <div class="money">
+                <span class="ltxt">￥</span>
+                <span class="rtxt">200</span>
+                <span class="num">共5个</span>
+            </div>
+        </li>
+        <li>
+            <div class="state_line rest" data-lasttime="60000" data-pure="1"></div>
+            <div class="money">
+                <span class="ltxt">￥</span>
+                <span class="rtxt">200</span>
+                <span class="num">共5个</span>
+            </div>
+        </li>
+    </ul>
+
+    <div class="vip-block">
+        <img class="vip-bg" src="./img/vip_crad_icon.jpg" />
+        <div class="money"><span class="ltxt">￥</span><span class="rtxt">108</span></div>
+    </div>
+
+    <div class="vip-block">
+        <img class="vip-bg" src="./img/vip_crad_buyed_icon.jpg" />
+        <div class="vip-name">逗逼家族通行卡</div>
+    </div>
+
+    <div class="group-enter">
+        <div class="ge-main">
+            <div class="gem-title">东土大唐</div>
+            <div class="gem-bottom">用心吐字，用爱发声</div>
+        </div>
+        <img class="gem-bt" src="./img/group_enter_bt.png" />
+    </div>
+
+    <ul class="message-list">
+        <li>
+            <div class="ml-top">
+                <div class="cover-block dib">
+                    <img class="cover dib" src="./img/image_eg.png" />
+                </div>
+                <div class="content dib">
+                    <div class="cd-title">粤讲粤玄</div>
+                    <div class="cd-content">
+                        今天还没怎么直播，就已经赚到了五千多块钱晚上回去跟姐妹们好好吃一顿吧 。然后明天大不然就太累了。
+                    </div>
+                    <div class="img-block">
+                        <img class="only-one" src="./img/image_eg.png"  />
+                    </div>
+                    <div class="more-info">
+                        <div class="mi-local">广东 广州</div>
+                        <div class="mi-time">40分钟前</div>
+                    </div>
+                    <div class="commit-block">
+                        <ul>
+                            <li>
+                                <a class="dib name">大德路</a>
+                                <span class="dib txt">：今天主播表现不错</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="ml-top">
+                <div class="cover-block dib">
+                    <img class="cover dib" src="./img/image_eg.png" />
+                </div>
+                <div class="content dib">
+                    <div class="cd-title">粤讲粤玄</div>
+                    <div class="cd-content">
+                        今天还没怎么直播，就已经赚到了五千多块钱晚上回去跟姐妹们好好吃一顿吧 。然后明天大不然就太累了。
+                    </div>
+                    <div class="img-block">
+                        <img class="list-unit" src="./img/image_eg.png"  />
+                        <img class="list-unit" src="./img/image_eg.png"  />
+                        <img class="list-unit" src="./img/image_eg.png"  />
+                        <img class="list-unit" src="./img/image_eg.png"  />
+                        <img class="list-unit" src="./img/image_eg.png"  />
+                        <img class="list-unit" src="./img/image_eg.png"  />
+                        <img class="list-unit" src="./img/image_eg.png"  />
+                        <div class="list-unit buy-bt"></div>
+                    </div>
+                    <div class="more-info">
+                        <div class="mi-local">广东 广州</div>
+                        <div class="mi-time">40分钟前</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<script type="text/javascript" src = "./js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src= "./js/swiper-3.3.1.min.js"></script>
+<script type="text/javascript">
+var curDate = new Date();
+var timer={};
+
+function formatSeconds(value) {
+    var theTime = parseInt(value);// 秒
+    var theTime1 = 0;// 分
+    var theTime2 = 0;// 小时
+    if(theTime > 60) {
+        theTime1 = parseInt(theTime/60);
+        theTime = parseInt(theTime%60);
+            if(theTime1 > 60) {
+            theTime2 = parseInt(theTime1/60);
+            theTime1 = parseInt(theTime1%60);
+        }
+    }
+        var result = ""+parseInt(theTime)+"秒";
+
+        if(theTime1 > 0) {
+            result = ""+parseInt(theTime1)+"分"+result;
+        }
+        if(theTime2 > 0 && theTime2 < 24) {
+            result = ""+parseInt(theTime2)+"小时"+result;
+        }else if(theTime2 > 0 && theTime2 >= 24){
+            result = "" +parseInt(theTime2/24) + "天" + parseInt(theTime2%24) + "小时"+result;
+        }
+    return result;
+}
+
+function daojishi(){
+	timer = setInterval(function(){
+		var tmpDate = new Date();
+		$('[data-lasttime]').each(function(){
+			var restsecond = $(this).data('lasttime');
+			var restNow = parseInt((restsecond * 1000  - (tmpDate - curDate))/1000);
+			console.log(restNow);
+			if(restNow < 0){
+				restNow = 0;
+			}else if($(this).data('pure')){
+				$(this).html(formatSeconds(restNow));
+			}else{
+                $(this).html('直播倒计时' + formatSeconds(restNow));
+            }
+		})
+
+	},1000)
+}
+
+function rspad(str){
+	while(str.length < 2){
+		str = '0' + str;
+	}
+	return str;
+}
+
+$(function(){
+	adaptscreen(740);
+	 var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+	/*开始倒计时*/
+	daojishi();
+})
+function adaptscreen(widthnum){
+	var DEFAULT_WIDTH = widthnum, // 页面的默认宽度
+	ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+	deviceWidth = window.screen.width, // 设备的宽度
+	devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+	targetDensitydpi;    // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+	if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+	targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+	$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+	}else{
+		$('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width='+DEFAULT_WIDTH+'px, user-scalable=no');
+	}
+}
+</script>
+</body>
+</html>
