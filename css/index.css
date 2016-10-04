@@ -577,6 +577,17 @@ body{
 
 .packet-body{
 	position: relative;
+	padding-bottom: 50px;
+}
+
+.pb-bottom{
+	font-size: 30px;
+	color: #999;
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
 }
 
 .pb-top{
@@ -592,6 +603,16 @@ body{
 	background: #FFF;
 	height: 120px;
 	border-bottom: 1px solid #e3e3e3;
+}
+
+.detail-list li:nth-child(1):after{
+	position: absolute;
+	content: '';
+	background: url('../img/redpacket/top_mark.png') no-repeat;
+	width: 142px;
+	height: 35px;
+	right: 22px;
+	top: 70px;
 }
 
 .detail-list li .dl-name{
@@ -619,6 +640,13 @@ body{
 	top: 74px;
 }
 
+.detail-list li .dl-money{
+	position: absolute;
+	font-size: 32px;
+	color: #333;
+	right: 22px;
+	top: 22px;
+}
 
 
 
