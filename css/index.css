@@ -5,6 +5,10 @@ body{
 .dib{ display: inline-block; vertical-align: middle;}
 .hide,.shide{ display:none;}
 
+.bggrey{
+	background: #f8f8f8;
+}
+
 .main-list{
 
 }
@@ -284,6 +288,7 @@ body{
 .message-list .ml-top .content .cd-content{
 	font-size: 28px;
 	color: #333333;
+	margin-top: 15px;
 }
 
 .message-list .ml-top .content .only-one{
@@ -506,3 +511,118 @@ body{
 		-o-transform:rotate(2deg); 	/* Opera */
 	}
 }
+
+.packet-top{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: #FFF url('../img/redpacket/top_bg.png') no-repeat center -100px;
+	height: 560px;
+	width: 100%;
+}
+
+.packet-top .packet-cover{
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	width: 120px;
+	margin-left: -60px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.packet-top .packet-title{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	font-size: 32px;
+	color: #333;
+	top: 248px;
+	width: 100%;
+}
+
+.packet-top .packet-second-title{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	font-size: 30px;
+	color: #999;
+	top: 296px;
+	width: 100%;
+}
+
+.packet-top .packet-money{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	font-size: 110px;
+	color: #333;
+	top: 380px;
+	width: 100%;
+}
+
+.packet-top .packet-money span{
+	font-size: 32px;
+}
+
+.packet-top .packet-note{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	font-size: 24px;
+	color: #4f75aa;
+	top: 506px;
+	width: 100%;
+}
+
+.packet-body{
+	position: relative;
+}
+
+.pb-top{
+	height: 85px;
+	line-height: 85px;
+	color: #999;
+	font-size: 30px;
+	padding-left: 25px;
+}
+
+.detail-list li{
+	position: relative;
+	background: #FFF;
+	height: 120px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.detail-list li .dl-name{
+	position: absolute;
+	font-size: 32px;
+	color: #333;
+	left: 130px;
+	top: 26px;
+}
+
+.detail-list li .dl-cover{
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	left: 20px;
+	top: 20px;
+}
+
+.detail-list li .dl-time{
+	position: absolute;
+	color: #999;
+	font-size: 24px;
+	left: 130px;
+	top: 74px;
+}
+
+
+
+
+
+
+
+

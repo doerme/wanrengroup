@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no"> 
+	<meta http-equiv="Content-Type">
+	<meta content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=740px, user-scalable=no">
+	<title>红包页</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css?v=2" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css?v=2" />
+</head>
+<body class="bggrey">
+<div class="packet-top">
+	<img class="packet-cover" src="./img/image_eg.png" />
+	<div class="packet-title">小妖的红包</div>
+	<div class="packet-second-title">国庆假期快乐！</div>
+	<div class="packet-money">2.90<span>元</span></div>
+	<div class="packet-note">已存入零钱，可直接提现</div>
+</div>
+
+<div class="packet-body">
+	<div class="pb-top">2个红包，12秒被抢光</div>
+	<ul class="detail-list">
+		<li>
+			<img class="dl-cover" src="./img/image_eg.png" />
+			<div class="dl-name">周润发</div>
+			<div class="dl-time">18:02</div>
+		</li>
+	</ul>
+</div>
+
+
+<script type="text/javascript" src = "./js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	adaptscreen(740);
+})
+function adaptscreen(widthnum){
+	var DEFAULT_WIDTH = widthnum, // 页面的默认宽度
+	ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+	deviceWidth = window.screen.width, // 设备的宽度
+	devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+	targetDensitydpi;    // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+	if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+	targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+	$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+	}else{
+		$('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width='+DEFAULT_WIDTH+'px, user-scalable=no');
+	}
+}
+</script>
+</body>
+</html>
