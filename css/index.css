@@ -590,6 +590,10 @@ body{
 	text-align: center;
 }
 
+.pb-bottom.blue{
+	color: #4f75aa;
+}
+
 .pb-top{
 	height: 85px;
 	line-height: 85px;
@@ -648,7 +652,111 @@ body{
 	top: 22px;
 }
 
+.red-packet-main{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
 
+.red-packet-main .rpm-mask{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+}
+
+.red-packet-main .rpm-main{
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -301px;
+	width: 602px;
+	height: 871px;
+	background: url('../img/redpacket/packet_bg.png') no-repeat;
+	background-size: 100% auto;
+}
+
+.red-packet-main .rpm-main.over{
+	background: url('../img/redpacket/packet_bg2.png') no-repeat;
+}
+
+.red-packet-main .rpm-main .rpm-cover{
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	top: 460px;
+}
+
+.red-packet-main .rpm-main .rpm-cover.over{
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	top: 140px;
+}
+
+.red-packet-main .rpm-main .rpm-name{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 560px;
+	text-align: center;
+	font-size: 28px;
+	color: #d9d085;
+}
+
+.red-packet-main .rpm-main .rpm-name.over{
+	top: 310px;
+}
+
+.red-packet-main .rpm-main .rpm-desc{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	font-size: 28px;
+	color: #d9d085;
+	top: 605px;
+}
+
+.red-packet-main .rpm-main .rpm-text{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	font-size: 48px;
+	color: #d9d085;
+	top: 670px;
+}
+
+.red-packet-main .rpm-main .rpm-over{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	font-size: 48px;
+	color: #d9d085;
+	top: 445px;
+}
+
+.red-packet-main .rpm-main .rpm-recover{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	font-size: 28px;
+	color: #d9d085;
+	top: 776px;
+}
 
 
 
